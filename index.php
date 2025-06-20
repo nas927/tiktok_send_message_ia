@@ -21,7 +21,7 @@ curl_setopt_array($curl, [
     ],
     CURLOPT_POSTFIELDS => json_encode([
         "model" => "deepseek-r1:8b",
-        "prompt" => "Tu es l'hote d'un live et tu dois l'animer le sujet c'est la troisième guerre mondial en quelque mot ne parle pas beaucoup",
+        "prompt" => "Tu es l'hote d'un live et tu dois l'animer le sujet c'est le piano en quelque mot ne parle pas beaucoup",
         "stream" => false
     ])
 ]);
