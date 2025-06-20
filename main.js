@@ -20,6 +20,7 @@ async function send_request() {
 const interval = setInterval(async () => {
     try {
         let result = await send_request();
+        console.log(result)
         chat.innerText = result;
         send.click();
         console.log("Envoyé !");
