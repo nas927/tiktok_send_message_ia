@@ -8,7 +8,7 @@ function send_request() {
     let result;
 
     fetch("https://localhost")
-    .then(r => result = r.json())
+    .then(r => result = r.json().response.replace(/<think>([\s\S]*?)<\/think>/, ""))
     .then(console.log)
     .catch(console.error); 
 
